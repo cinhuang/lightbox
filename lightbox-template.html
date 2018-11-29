@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/style-colleen.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+
+	<div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".Dog">Dog</button>
+            <button type="button" class="control" data-filter=".bunny">Bunny</button>
+            <button type="button" class="control" data-filter=".cat">Cat</button>
+            <button type="button" class="control" data-filter="none">None</button>
+        </div>
+
+
+	<div class = "gallery container">
+		<a href="images/dog1.jpeg" data-lightbox="dog" data-title="A husky dog" class = "mix Dog"><img src="images/dog1.jpeg"></a>
+		<a href="images/dog2.jpg" data-lightbox="dog" data-title="A dog swimming" class = "mix Dog"><img src="images/dog2.jpg"></a>
+		<a href="images/dog3.jpg" data-lightbox="dog" data-title="A collie dog with a flower crown" class = "mix Dog"><img src="images/dog3.jpg"></a>
+
+		<a href="images/bunn1.jpg" data-lightbox="bunny" data-title="A light orange bunny" class = "mix bunny"><img src="images/bunny1.jpg"></a>
+		<a href="images/bunny2.jpg" data-lightbox="bunny" data-title="A baby bunny" class = "mix bunny"><img src="images/bunny2.jpg"></a>
+		<a href="images/bunny3.jpg" data-lightbox="bunny" data-title="A white and gray bunny" class = "mix bunny"><img src="images/bunny3.jpg"></a>
+		
+		<a href="images/cat1.jpg"data-lightbox="cat" data-title="A turtle patterned cat" class = "mix cat"><img src="images/cat1.jpg"></a>
+		<a href="images/cat2.jpeg" data-lightbox="cat" data-title="A cat wearing a bow tie" class = "mix cat"><img src="images/cat2.jpeg"></a>
+		<a href="images/cat3.jpg" data-lightbox="cat" data-title="A gray fluffly cat" class = "mix cat"><img src="images/cat3.jpg"></a>
+	</div>
+
+<script src="js/lightbox.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl);
+        </script>
+</body>
+</html>
